@@ -1,0 +1,34 @@
+{
+  "canisters": {
+    "first": {
+      "main": "src/first/main.mo",
+      "type": "motoko"
+    },
+    "first_assets": {
+      "dependencies": [
+        "first"
+      ],
+      "frontend": {
+        "entrypoint": "src/first_assets/src/index.html"
+      },
+      "source": [
+        "src/first_assets/assets",
+        "dist/first_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "dfx": "0.7.2",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
