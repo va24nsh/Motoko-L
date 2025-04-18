@@ -16,6 +16,10 @@
         "dist/first_assets/"
       ],
       "type": "assets"
+    },
+    "second": {
+      "main": "src/second/main.mo",
+      "type": "motoko"
     }
   },
   "defaults": {

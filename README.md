@@ -1,20 +1,26 @@
-# first
+# How to start a new project in MOTOKO locally
 
-Welcome to your new first project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+1. **Create a new project**
+    ```bash
+    dfx new <project-name>
+    ```
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+2. **Start the Project**
+    ```bash
+    dfx start
+    ```
+3. **Deploy with canister name(usually the project name)**
+    ```bash
+    dfx deploy <canister-name>
+    ```
+4. **Call any function in the deployed canister**
+    ```bash
+    dfx canistor call <canister-name> <function-name> '(<optional-arguments>)'
+    ```
 
-To learn more before you start working with first, see the following documentation available online:
+# How to create a new canister inside existing
 
-- [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
-- [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
-- [Motoko Programming Language Guide](https://sdk.dfinity.org/docs/language-guide/motoko.html)
-- [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
-
-If you want to start working on your project right away, you might want to try the following commands:
-
-```bash
-cd first/
-dfx help
-dfx config --help
-```
+- Change the dfx.json file
+- Under canisters add a new canistor with your canistor name
+- Set the the path to main.mo file
+- Set the type of file as "motoko"
