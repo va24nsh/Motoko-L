@@ -1,6 +1,6 @@
 # How to start a new project in MOTOKO locally
 
-1. **Create a new project**
+1. **Create a new project (ony for new project - not this one)**
     ```bash
     dfx new <project-name>
     ```
